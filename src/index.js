@@ -85,6 +85,7 @@ function fetchHits() {
 
 function appendHitsMarkup(hits) {
   refs.gallery.insertAdjacentHTML('beforeend', cardTmpl(hits));
+
   loadMoreBtn.refs.button.scrollIntoView({
     behavior: 'smooth',
     block: 'end',
